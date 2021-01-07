@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+}
+
+.flex{
+    display: flex; 
+}
+
+.fourofour{
+    padding: 2rem 4rem;
+    font-weight: bold;
+}
+
+.fourofour .flex{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.scarecrow img{
+    max-width: 60%;
+    margin: 4rem;
+    margin-left: 8rem;
+}
+
+.heading{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 54px;
+    font-weight: bolder;
+    line-height: 94.78px;
+}
+.info{
+    max-width: 65%;
+    font-size: 24px;
+    margin-bottom: 2rem;
+    color: #4F4F4F;;
+}
+
+.btn{
+    max-width: 173px;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.flex .heading{
+    justify-content: flex-start;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 760px){
+    .fourofour .flex{
+        justify-content: flex-start;
+    }
+    .main .flex{
+        flex-direction: column;
+    }
+    .scarecrow img{
+        max-width: 100%;
+        margin: 0;
+    }
+    .heading{
+        font-size: 38px;
+        line-height: 70px;
+        margin: 0 2.5rem;
+    }
+    .info{
+        font-size: 16px;
+        margin: 1rem 2.5rem;
+        line-height: 26px;
+        font-weight: 580;
+    }
+    .btn{
+        margin: 2.5rem 2.5rem;
+    }
+}
