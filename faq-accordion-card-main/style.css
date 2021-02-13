@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+:root{
+    --primary-color: ;
+    --secondary-color: ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(180deg, #af67e9, #6565e7) no-repeat;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    max-width: 75%;
+    margin: 5.9rem auto;
+    padding: 0rem;
+    background-color: white;
+    color: black;
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bg{
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    background-position: -550px -300px; 
+}
+
+.woman {
+    overflow: hidden;
+}
+.woman img{
+    max-width: 100%;
+    margin: 4rem 0 0 -5rem;
+}
+
+.woman-sm{
+    display: none;
+}
+
+.box {
+    max-width: 40%;
+    margin: -15rem 0 0 -6rem;
+    overflow: show;
+}
+
+.header{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 3rem 2rem 2rem 0;
+}
+.faq{
+    color: grey;
+}
+.faq-holder {
+    max-width: 80%;
+    border-bottom: 1px solid grey;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-question {
+    display: inline;
+}
+.faq-answer {
+    display: none;
+    margin-top: 1.3rem;
+}
+
+.rotate{
+    transition: transform 0.1s ease;
+    transform: rotate(180deg);
+}
+
+.icon-flex{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin-top: -1rem;
+} 
+
+.attribution { color: white; padding: 1rem; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 960px){
+    body{
+        font-size: 16px;
+    }
+    .card{
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg{
+        background-image: url("./images/bg-pattern-mobile.svg");
+        background-position: 20px -13px;
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+    }
+
+    .woman{
+        display: none;
+    }
+
+    .woman-sm{
+        display: block;
+        margin: -7rem auto 0 auto;
+    }
+
+    .box{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq-holder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto auto;
+    }
+
+    .icon{
+        justify-content: flex-end;
+    }
+}
